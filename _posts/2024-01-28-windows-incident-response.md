@@ -1,6 +1,6 @@
- #### **Incident Response On Windows** 
+#### **Incident Response On Windows** 
 
- #### **Üç Önemli Soru**
+#### **Üç Önemli Soru**
 
 Hacklenen veya hacklendiğine inanılan bir sistemi analiz ederken, İşletim sistemi ne olursa olsun cevaplanması gereken 3 soru vardır. Bu sorulara verilecek yanıtlar değişebilir veya analizin devamını sonlandırabilir.
 
