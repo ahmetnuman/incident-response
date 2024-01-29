@@ -34,6 +34,49 @@ Her ne kadar çok tercih edilmese de arayüz kullanma şansınız yoksa komut sa
 
 ![Image](/img/s6.png)
 
+#### Deleted Tasks
+
+Ya tüm araştırmalardan sonra şüpheli bir görev gözlemlemezsek? Saldırgan, çalıştırıldıktan sonra kendini silen bir görev oluşturmuş olabilir mi?
+
+Böyle bir durumun tespit edilebilmesi için daha önceki logların incelenmesi gerekmektedir. Bu gibi durumlarda olay günlükleri imdada yetişecektir. Görev Zamanlayıcı üzerinden ilgili loglara ulaşmak isterseniz Task Scheduler içerisinde yer alan “Applications and Services Logs-Microsoft-Windows-TaskScheduler Operational.evtx” bölümünden ulaşabilirsiniz.
+
+![Image](/img/s7.png)
+
+Veya aşağıdaki “Güvenlik” loglarını takip edebilirsiniz:
+
+Event ID 4698: A scheduled task was created
+Event ID 4702: A scheduled task was updated
+
+Örneğin aşağıdaki günlükte, 10 tarihinde zamanlanmış bir görevin oluşturulduğunu görebiliriz. /23/2021
+
+![Image](/img/s8.png)
+
+“Action” kısmına baktığımızda görevin çalıştırmaya çalıştığı dosyayı/komutu görebiliriz. Bu görev şu anda “Task Scheduler”da aktif olmasa bile, bu görevin geçmişte oluşturulduğunu bir log analizi ile tespit ettik.
+
+#### Ne Öğrendik ?
+
+Saldırganların sıklıkla kullandığı bir yöntem olan zamanlanmış görevlerde şüpheli aktiviteyi nasıl tespit edebileceğimizi konuştuk. Ayrıca şu anda aktif olmayan ve kendi kendine silinen görevleri nasıl tespit edebileceğimizi de öğrendik.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
